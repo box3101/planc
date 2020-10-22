@@ -1,0 +1,13 @@
+/* =================== header =================== */
+.header {
+  &-wrap {
+    height: 50px;
+  }
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: z(header);
+}

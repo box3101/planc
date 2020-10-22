@@ -1,0 +1,77 @@
+/* =================== form =================== */
+.input {
+  box-shadow: none;
+  border-radius: 0;
+  outline: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  font-family: "noto", sans-serif;
+  // input은 무조건 input-box안에 사용
+  &-box {
+    width: 100%;
+  }
+  // select
+  &-selec {
+    width: 100%;
+    height: 50px;
+    border: 1px solid color(main);
+    padding: 10px 15px;
+    background-color: white;
+    cursor: pointer;
+    &--round {
+      @extend .input-selec;
+      border-radius: 25px;
+    }
+    &--underbar {
+      @extend .input-selec;
+      border: 0;
+      border-bottom: 1px solid;
+      border-radius: 0;
+    }
+  }
+  // input text
+  &-txt {
+    width: 100%;
+    height: 50px;
+    border: 1px solid color(main);
+    padding: 0 25px;
+    background-color: white;
+    &--round {
+      @extend .input-txt;
+      border-radius: 25px;
+    }
+    &--underbar {
+      @extend .input-txt;
+      border: 0;
+      border-bottom: 1px solid;
+      border-radius: 0;
+    }
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+  // textarea
+  &-tarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid color(main);
+    padding: 15px;
+    background-color: white;
+    &--round {
+      @extend .input-tarea;
+      border-radius: 25px;
+    }
+    &--underbar {
+      @extend .input-tarea;
+      border: 0;
+      border-bottom: 1px solid;
+      border-radius: 0;
+    }
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+}

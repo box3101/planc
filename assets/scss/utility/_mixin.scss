@@ -1,0 +1,261 @@
+// responsive Setting
+@mixin media($device, $range: max) {
+  @media all and (#{$range}-width: device($device, "key")) {
+    @content;
+  }
+}
+
+// responsive custom Setting
+@mixin media-custom($px, $range: max) {
+  @media all and (#{$range}-width: $px) {
+    @content;
+  }
+}
+
+// position: absolute
+@mixin absolute($t: 0, $l: 0, $b: null, $r: null) {
+  position: absolute;
+
+  @if $t {
+    top: if($b, auto, $t);
+    bottom: $b;
+
+    left: if($r, auto, $l);
+    right: if($l == 0 or $l, $r, $l);
+  }
+}
+
+@mixin pos-abs-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin pos-abs-center-horizontal() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin pos-abs-center-vertical() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// translate
+@mixin translate(
+  $t: 0,
+  $l: 0,
+  $b: null,
+  $x: null,
+  $y: null,
+  $x: null,
+  $y: null
+) {
+  position: absolute;
+
+  @if $t == 50% and $l == 50% {
+    @if $x and $y {
+      top: $t;
+      left: $l;
+      transform: translate($x, $y);
+    } @else if $x {
+      top: $t;
+      left: $l;
+      transform: translate($x, -50%);
+    } @else if $y {
+      top: $t;
+      left: $l;
+      transform: translate(-50%, $y);
+    } @else {
+      top: $t;
+      left: $l;
+      transform: translate(-50%, -50%);
+    }
+  } @else if $t == 50% or $l == 50% {
+    @if $t == 50% {
+      top: $t;
+      left: $l;
+      transform: if($y, translateY($y), translateY(-50%));
+    }
+
+    @if $l == 50% {
+      top: $t;
+      left: $l;
+      transform: if($x, translateX($x), translateX(-50%));
+    }
+  }
+}
+
+@mixin wh($w: null, $h: null) {
+  width: $w;
+  height: $h;
+}
+
+@mixin fullSize {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  @content;
+}
+
+@mixin flex {
+  display: flex;
+  @content;
+}
+
+@mixin flex-item-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-item-option($ai: null, $jc: null) {
+  align-items: $ai;
+  justify-content: $jc;
+}
+@mixin width-height-padding($w, $h, $p) {
+  width: $w;
+  height: $h;
+  padding: $p;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @content;
+}
+@mixin inline-block {
+  display: inline-block;
+  @content;
+}
+
+@mixin bg-url($path, $img, $op-default: false, $op-p: null, $op-s: null) {
+  background-image: urlPath($path, $img);
+
+  @if ($op-default) {
+    @include bg-option;
+  }
+
+  @if $op-p and $op-s {
+    @include bg-option($p: $op-p, $s: $op-s);
+  } @else if $op-p {
+    @include bg-option($p: $op-p);
+  } @else if $op-s {
+    @include bg-option($s: $op-s);
+  }
+}
+
+@mixin bg-option($p: center, $s: cover, $r: no-repeat) {
+  background-position: $p;
+  background-size: $s;
+  background-repeat: $r;
+}
+
+@mixin font-op($c: null, $w: null, $ls: null) {
+  @content;
+
+  font-weight: $w;
+  color: $c;
+  letter-spacing: $ls;
+}
+
+@mixin make-before($c: "", $d: inline-block) {
+  &:before {
+    content: $c;
+    display: $d;
+    @content;
+  }
+}
+
+@mixin make-after($c: "", $d: inline-block) {
+  &:after {
+    content: $c;
+    display: $d;
+    @content;
+  }
+}
+
+@mixin transition-group {
+  /* 인터랙션 관련 스타일 */
+  @content;
+  /* END 인터랙션 관련 스타일 */
+}
+
+@mixin ie-style {
+  @at-root html.ie & {
+    @content;
+  }
+}
+
+@mixin input-reset {
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none; /*ios에 나오는 그림자 제거*/
+  -moz-appearance: none; /*ios에 나오는 그림자 제거*/
+  padding: 0;
+  outline: none;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin ellipse($line-cnt, $line-height) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-cnt; // $line-cnt : 라인 수
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: $line-height; // $line-height : line-height값 (단위 필수)
+  height: $line-height * $line-cnt; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+}
+
+@mixin iPhoneXs {
+  /* iPhone XS : 2436x1125px at 458ppi */
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    @content;
+  }
+}
+
+@mixin iPhoneXr {
+  /* iPhone XR : 1792x828px at 326ppi */
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+@mixin iPhoneXsMax {
+  /* iPhone XS Max : 2688x1242px at 458ppi */
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    @content;
+  }
+}
+
+@mixin changed-circle($size) {
+  @include inline-block;
+  @include wh($size, $size);
+
+  border-radius: 50%;
+  @content;
+}
+
+@mixin circle-in-after {
+  height: auto;
+
+  @include make-after {
+    width: 100%;
+    padding-top: 100%;
+    user-select: none;
+  }
+}
