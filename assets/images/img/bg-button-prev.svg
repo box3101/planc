@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.597" height="21.048" viewBox="0 0 56.597 21.048">
+  <g id="그룹_253" data-name="그룹 253" transform="translate(-1343.403 -1806)">
+    <text id="prev" transform="translate(1371 1822)" fill="#01152f" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">prev</tspan></text>
+    <g id="btn_prev_bk" transform="translate(-77 -892.5)">
+      <path id="btn_prev" d="M2946.834,5759.3l-6.838,7,6.838,7" transform="translate(-1517.496 -3054.801)" fill="none" stroke="#01152f" stroke-width="3"/>
+      <line id="선_101" data-name="선 101" x2="17" transform="translate(1422.5 2711.5)" fill="none" stroke="#01152f" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

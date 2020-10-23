@@ -1,36 +1,62 @@
-/* =================== list =================== */
-.list {
-  display: flex;
-  align-items: center;
-  &-title {
-    width: 200px;
-  }
-  &-desc {
-    width: 100%;
-  }
-}
-.list-wrap {
-  position: relative;
-  &--underline {
-    .list {
-      border-top: 1px solid #e6e6e6;
-      padding: 10px 0;
-    }
-    .list:first-of-type {
-      border-top: 0;
-    }
-  }
-  &--side {
-    .list {
-      justify-content: space-between;
+.partner {
+  &__flatform-box {
+    margin-top: 50px;
+
+    &--tit {
+      margin-bottom: 40px;
+      @include flex;
       align-items: center;
+      justify-content: space-between;
+      .is-category {
+        display: inline-block;
+        width: 114px;
+        height: 40px;
+        @include font-op($c: #fff, $w: 500) {
+          font-size: 18px;
+          line-height: 40px;
+        }
+        background: #01152f;
+        text-align: center;
+      }
+      .is-line {
+        width: 880px;
+        height: 2px;
+        background: #01152f;
+      }
     }
-    .list-title {
-      min-width: 150px;
-      width: auto;
+    &--list {
+      display: flex;
     }
-    .list-desc {
-      width: auto;
+    &--item {
+      width: 25%;
+
+      &-img {
+        width: 100%;
+        height: 88px;
+        img {
+          width: 100%;
+          object-fit: cover;
+          vertical-align: bottom;
+        }
+        &-last {
+          margin: 0 auto;
+          width: 100px;
+          height: 146px;
+        }
+      }
+
+      &-txt {
+        margin-top: 22px;
+        text-align: center;
+        @include font-op($w: 600) {
+          font-size: 22px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    &.first {
+      margin-bottom: 132px;
     }
   }
 }

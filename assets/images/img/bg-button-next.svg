@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55.935" height="21.048" viewBox="0 0 55.935 21.048">
+  <g id="그룹_252" data-name="그룹 252" transform="translate(-1416 -1806)">
+    <text id="next" transform="translate(1445 1822)" fill="#01152f" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="-28.557" y="0">next</tspan></text>
+    <g id="btn_next_bk" transform="translate(0 -892.5)">
+      <path id="btn_next" d="M2940,5759.3l6.838,7-6.838,7" transform="translate(-1476.996 -3054.801)" fill="none" stroke="#01152f" stroke-width="3"/>
+      <line id="선_100" data-name="선 100" x2="17" transform="translate(1453 2711.5)" fill="none" stroke="#01152f" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

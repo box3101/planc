@@ -141,32 +141,32 @@
     color: $color;
   }
 }
-// 고스트 버튼 색(배경색을 상속받아옴)
-@each $name, $color in $btn-color {
-  .btn-gst-#{$name} {
-    border: 1px solid $color;
-    color: $color;
-  }
-}
-// 소셜 버튼
-// icon button: btn btn-circle btn-kakao
-// text button: btn btn-kakao
-.socail-btn-wrap {
-  flex-wrap: wrap;
-  .btn {
-    margin: 0;
-  }
-}
 
-.socail-icon-btn-wrap {
-  justify-content: center;
-}
-@each $name, $color in $socail {
-  .btn-#{$name} {
-    background-color: $color;
-    color: #ffffff;
+// inquiry버튼
+.inquiry-btn {
+  margin-top: 43px;
+  position: relative;
+  text-align: center;
+  &__txt {
+    @include font-op($c: #fff, $w: 600) {
+      font-size: 22px;
+    }
+    img {
+      display: inline-block;
+      margin-left: 5px;
+    }
   }
-}
-.btn-kakao {
-  color: #2b1718;
+  &__line {
+    @include pos-abs-center-horizontal();
+    top: 49px;
+    width: 18.75rem;
+    height: 0.125rem;
+    background: #ffffff;
+    @include make-before {
+      @include absolute;
+      width: 20%;
+      height: 2px;
+      background: #01fe87;
+    }
+  }
 }

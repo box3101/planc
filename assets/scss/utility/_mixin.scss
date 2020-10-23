@@ -43,15 +43,7 @@
 }
 
 // translate
-@mixin translate(
-  $t: 0,
-  $l: 0,
-  $b: null,
-  $x: null,
-  $y: null,
-  $x: null,
-  $y: null
-) {
+@mixin translate($t: 0, $l: 0, $b: null, $x: null, $y: null, $x: null, $y: null) {
   position: absolute;
 
   @if $t == 50% and $l == 50% {

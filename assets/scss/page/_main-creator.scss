@@ -1,0 +1,89 @@
+.benefit {
+  padding-top: 83px;
+  padding-bottom: 103px;
+  &__inner {
+  }
+  &__event-box {
+    margin-bottom: 46px;
+    position: relative;
+    @include make-before {
+      @include absolute($t: 0, $l: 0);
+      width: 584px;
+      height: 90px;
+      background: #5922c8;
+      transform: rotate(3deg);
+      z-index: zIndex(default);
+    }
+    img {
+      transform: rotate(0deg);
+      position: relative;
+      z-index: 2;
+      left: 33%;
+      top: 13px;
+    }
+    @include make-after {
+      @include absolute($t: 10px, $l: 10px);
+      width: 584px;
+      height: 90px;
+      background: #01fe87;
+      transform: rotate(3deg);
+    }
+
+    &--right {
+      @include make-before {
+        width: 504px;
+        @include absolute($t: 0px, $r: 10px);
+        transform: rotate(-3deg);
+        z-index: zIndex(default);
+      }
+      img {
+        transform: rotate(0deg);
+        position: relative;
+        z-index: 2;
+        left: 51.5%;
+        top: 10px;
+      }
+      @include make-after {
+        width: 504px;
+        @include absolute($t: 10px, $r: 0px);
+        transform: rotate(-3deg);
+      }
+    }
+  }
+  &__info {
+    margin-top: 72px;
+    display: flex;
+    &--list {
+      width: 33.3%;
+      &-icon {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      &-txt {
+        text-align: center;
+        margin-top: 16px;
+        @include font-op($w: 400) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+// creator-faq
+.creator-faq {
+  position: relative;
+  &__inner {
+    position: relative;
+  }
+  .faq-slide-wrap {
+    overflow: hidden;
+  }
+}
+// creator-faq eee

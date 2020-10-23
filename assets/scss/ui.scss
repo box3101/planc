@@ -13,7 +13,13 @@
 @import "component/button";
 @import "component/form";
 @import "component/list";
+@import "component/tit";
+@import "component/slide";
 
 // 4. layout
 @import "layout/layout";
 @import "layout/header";
+
+// 5. main
+@import "page/main";
+@import "page/main-creator";

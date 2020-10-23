@@ -2,6 +2,15 @@
 @function color($color) {
   @return map-get($main-color, $color);
 }
+// color: bg-color(text);
+@function bg-color($color) {
+  @return map-get($bg-color, $color);
+}
+// color: line-color(text);
+@function line-color($color) {
+  @return map-get($line-color, $color);
+}
+
 // image url setting
 @function path($path) {
   @return map-get($path-set, $path);

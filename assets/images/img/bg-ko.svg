@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.001" height="26.001" viewBox="0 0 26.001 26.001">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_864" data-name="Clip 864" d="M0,13A13,13,0,0,0,13,26h0A13,13,0,0,0,26,13h0A13,13,0,0,0,13,0h0A13,13,0,0,0,0,13Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_885" data-name="Group 885" clip-path="url(#clip-path)">
+    <path id="Fill_863" data-name="Fill 863" d="M0,27.509H43.812V0H0Z" transform="translate(-8.906 -0.753)" fill="#fff"/>
+    <path id="Fill_865" data-name="Fill 865" d="M0,.474.671,0,1.949,1.99l-.682.476Z" transform="translate(17.79 5.952)"/>
+    <path id="Fill_866" data-name="Fill 866" d="M0,.5,1.278,2.478,1.951,2,.721,0Z" transform="translate(19.267 8.311)"/>
+    <path id="Fill_867" data-name="Fill 867" d="M0,.5,2.77,4.877,3.452,4.4.684,0Z" transform="translate(18.82 5.188)"/>
+    <path id="Fill_868" data-name="Fill 868" d="M0,.461,1.242,2.49,1.925,2,.645,0Z" transform="translate(19.888 4.463)"/>
+    <path id="Fill_869" data-name="Fill 869" d="M0,.5,1.243,2.463l.694-.488L.671,0Z" transform="translate(21.366 6.849)"/>
+    <path id="Fill_870" data-name="Fill 870" d="M1.937.494.68,2.482,0,2,1.238,0Z" transform="translate(19.295 15.191)"/>
+    <path id="Fill_871" data-name="Fill 871" d="M1.937.494.68,2.482,0,2,1.238,0Z" transform="translate(20.311 15.902)"/>
+    <path id="Fill_872" data-name="Fill 872" d="M1.939.493.68,2.48,0,2,1.239,0Z" transform="translate(21.353 16.645)"/>
+    <path id="Fill_873" data-name="Fill 873" d="M1.936.495.68,2.48,0,2,1.238,0Z" transform="translate(19.873 19.026)"/>
+    <path id="Fill_874" data-name="Fill 874" d="M1.937.5.679,2.483,0,2,1.239,0Z" transform="translate(18.839 18.284)"/>
+    <path id="Fill_875" data-name="Fill 875" d="M1.938.494.681,2.48,0,2,1.24,0Z" transform="translate(17.804 17.554)"/>
+    <path id="Fill_876" data-name="Fill 876" d="M.689,0,3.436,4.379l-.689.483L0,.494Z" transform="translate(4.71 15.191)"/>
+    <path id="Fill_877" data-name="Fill 877" d="M.69,0,3.437,4.379l-.689.485L0,.493Z" transform="translate(2.632 16.654)"/>
+    <path id="Fill_878" data-name="Fill 878" d="M0,.484,1.238,2.472,1.909,2,.661,0Z" transform="translate(5.185 18.305)"/>
+    <path id="Fill_879" data-name="Fill 879" d="M0,.484,1.239,2.472,1.909,2,.663,0Z" transform="translate(3.704 15.922)"/>
+    <path id="Fill_880" data-name="Fill 880" d="M3.418.5.661,4.864,0,4.4,2.728,0Z" transform="translate(4.719 5.928)"/>
+    <path id="Fill_881" data-name="Fill 881" d="M3.418.5.661,4.863,0,4.4,2.729,0Z" transform="translate(3.695 5.178)"/>
+    <path id="Fill_882" data-name="Fill 882" d="M3.419.5.663,4.863,0,4.4,2.73,0Z" transform="translate(2.651 4.447)"/>
+    <path id="Fill_883" data-name="Fill 883" d="M9.218,2.486A2.481,2.481,0,0,0,5.976,1.427c-1.2.622-1.2,2.135-3.083,2.1C1.476,3.489.052,2.289.515,0A5.446,5.446,0,0,0,0,2.324,5.152,5.152,0,0,0,4.992,7.6,4.924,4.924,0,0,0,9.373,4.788a3.194,3.194,0,0,0-.155-2.3" transform="translate(7.991 10.64)" fill="#033477"/>
+    <path id="Fill_884" data-name="Fill 884" d="M4.566,0A4.99,4.99,0,0,0,.089,2.948c-.462,2.289.962,3.489,2.379,3.524C4.35,6.511,4.35,5,5.55,4.375A2.482,2.482,0,0,1,8.793,5.435a3.193,3.193,0,0,1,.155,2.3,5.517,5.517,0,0,0,.574-2.465A5.12,5.12,0,0,0,4.566,0" transform="translate(8.417 7.692)" fill="#c50d2f"/>
+  </g>
+</svg>

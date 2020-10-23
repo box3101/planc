@@ -5,11 +5,15 @@ body,
 .wrap {
   height: 100%;
 }
+
+.is-en {
+  font-family: "Roboto", sans-serif !important;
+}
 .wrap {
   overflow-y: auto;
 }
 .l-center {
-  max-width: 1080px;
+  max-width: 1024px;
   width: 95%;
   margin: 0 auto;
 }
