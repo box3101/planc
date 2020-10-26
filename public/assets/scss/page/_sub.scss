@@ -1,0 +1,138 @@
+.benefit {
+  padding-top: 5.1875rem;
+  padding-bottom: 6.4375rem;
+  &__inner {
+  }
+  &__event-box {
+    margin-bottom: 2.875rem;
+    position: relative;
+    @include make-before {
+      @include absolute($t: 0, $l: 0);
+      width: 36.5rem;
+      height: 5.625rem;
+      background: #5922c8;
+      transform: rotate(3deg);
+      z-index: zIndex(default);
+      @at-root .main-brand & {
+        background: #2703e8;
+      }
+    }
+    img {
+      transform: rotate(0deg);
+      position: relative;
+      z-index: 2;
+      left: 33%;
+      top: 0.8125rem;
+      width: 14.5rem;
+      height: 4.875rem;
+      @include media(mb) {
+        left: 209px;
+      }
+    }
+    @include make-after {
+      @include absolute($t: 0.625rem, $l: 0.625rem);
+      width: 36.5rem;
+      height: 5.625rem;
+      background: #01fe87;
+      transform: rotate(3deg);
+    }
+
+    &--right {
+      @include make-before {
+        width: 31.5rem;
+        @include absolute($t: 0rem, $r: 0.625rem);
+        transform: rotate(-3deg);
+        z-index: zIndex(default);
+      }
+      img {
+        transform: rotate(0deg);
+        position: relative;
+        z-index: 2;
+        left: 51.5%;
+        top: 0.625rem;
+      }
+      @include make-after {
+        width: 31.5rem;
+        @include absolute($t: 0.625rem, $r: 0rem);
+        transform: rotate(-3deg);
+      }
+    }
+
+    &:nth-of-type(1) {
+      @include media(mb) {
+        left: -151px;
+      }
+    }
+    &:nth-of-type(2) {
+      @include media(mb) {
+        left: auto;
+        right: -109px;
+      }
+      img {
+        @include media(mb) {
+          left: 64px;
+          width: 164px;
+        }
+      }
+    }
+  }
+  &__info {
+    margin-top: 4.5rem;
+    display: flex;
+    @include media(mb) {
+      margin-top: 5.5rem;
+    }
+    &--list {
+      width: 33.3%;
+      @include media(mb) {
+        width: 100%;
+      }
+      &-icon {
+        width: 9.375rem;
+        height: 9.375rem;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+        @include media(mb) {
+          width: 130px;
+          height: 130px;
+        }
+      }
+      &-txt {
+        text-align: center;
+        margin-top: 1rem;
+        @include font-op($w: 400) {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+        @include media(mb) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    @include media(mb) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @include media(mb) {
+    padding-bottom: 3.4375rem;
+    overflow: hidden;
+  }
+}
+
+// creator-faq
+.creator-faq {
+  position: relative;
+  &__inner {
+    position: relative;
+  }
+  .faq-slide-wrap {
+    overflow: hidden;
+  }
+}
+// creator-faq eee

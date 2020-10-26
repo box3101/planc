@@ -16,7 +16,7 @@
       {
         "format": "expanded",
         "extensionName": ".css",
-        "savePath": "/assets/css/"
+        "savePath": "/public/assets/css/custom"
       }
     ],
     "liveSassCompile.settings.generateMap": true,
