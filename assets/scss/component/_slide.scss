@@ -45,6 +45,9 @@
     }
     &.swiper-slide-active {
       background: #5922c8;
+      @at-root .main-brand & {
+        background: #2703e8;
+      }
       .com-slide--item-num,
       .com-slide--item-tit,
       .com-slide--item-txt {

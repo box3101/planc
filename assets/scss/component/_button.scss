@@ -150,6 +150,7 @@
   &__txt {
     @include font-op($c: #fff, $w: 600) {
       font-size: 22px;
+      letter-spacing: -1px;
     }
     img {
       display: inline-block;

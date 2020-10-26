@@ -13,6 +13,9 @@
       background: #5922c8;
       transform: rotate(3deg);
       z-index: zIndex(default);
+      @at-root .main-brand & {
+        background: #2703e8;
+      }
     }
     img {
       transform: rotate(0deg);

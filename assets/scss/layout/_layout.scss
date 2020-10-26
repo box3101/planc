@@ -9,13 +9,13 @@ body,
 .is-en {
   font-family: "Roboto", sans-serif !important;
 }
-.wrap {
-  overflow-y: auto;
-}
 .l-center {
   max-width: 1024px;
   width: 95%;
   margin: 0 auto;
+  @include media(mb) {
+    width: 90%;
+  }
 }
 // empty content
 .empty-content {
