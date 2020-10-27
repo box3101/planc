@@ -1,7 +1,10 @@
+// benefit
 .benefit {
   padding-top: 5.1875rem;
   padding-bottom: 6.4375rem;
-  &__inner {
+  &__event-box-wrap {
+    display: flex;
+    justify-content: space-between;
   }
   &__event-box {
     margin-bottom: 2.875rem;
@@ -16,17 +19,24 @@
       @at-root .main-brand & {
         background: #2703e8;
       }
+
+      @include media(mb) {
+        height: 48px;
+      }
     }
     img {
       transform: rotate(0deg);
       position: relative;
       z-index: 2;
-      left: 33%;
+      left: 21.3rem;
       top: 0.8125rem;
       width: 14.5rem;
       height: 4.875rem;
       @include media(mb) {
-        left: 209px;
+        width: 119px;
+        height: 34px;
+        left: 24rem;
+        top: 1.2rem;
       }
     }
     @include make-after {
@@ -35,9 +45,19 @@
       height: 5.625rem;
       background: #01fe87;
       transform: rotate(3deg);
+      @include media(mb) {
+        height: 48px;
+      }
     }
 
     &--right {
+      margin-top: 7.5rem;
+      @include media(web) {
+        margin-top: 8.5rem;
+      }
+      @include media(mb) {
+        margin-top: 70px;
+      }
       @include make-before {
         width: 31.5rem;
         @include absolute($t: 0rem, $r: 0.625rem);
@@ -45,39 +65,63 @@
         z-index: zIndex(default);
       }
       img {
+        width: 19.75rem;
+        height: 83px;
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         position: relative;
         z-index: 2;
-        left: 51.5%;
-        top: 0.625rem;
+        left: auto;
+        top: 0.425rem;
+        right: 11.7rem;
+
+        @at-root .main-brand & {
+          width: 15.25rem;
+          height: 4.125rem;
+          top: 1.025rem;
+          right: 16rem;
+          @include media(mb) {
+            width: 127px;
+            height: 34px;
+            right: 18.5rem;
+          }
+        }
+
+        @include media(mb) {
+          right: 16.2rem;
+          width: 156px;
+          height: 34px;
+        }
       }
       @include make-after {
         width: 31.5rem;
         @include absolute($t: 0.625rem, $r: 0rem);
         transform: rotate(-3deg);
       }
+
+      @include media(mb) {
+        left: 0;
+      }
     }
 
     &:nth-of-type(1) {
       @include media(mb) {
-        left: -151px;
+        left: -18.4375rem;
       }
     }
     &:nth-of-type(2) {
       @include media(mb) {
         left: auto;
-        right: -109px;
+        right: -12.8125rem;
       }
       img {
         @include media(mb) {
-          left: 64px;
-          width: 164px;
         }
       }
     }
   }
   &__info {
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
     display: flex;
     @include media(mb) {
       margin-top: 5.5rem;
@@ -120,14 +164,25 @@
     }
   }
   @include media(mb) {
+    padding-top: 27px;
     padding-bottom: 3.4375rem;
     overflow: hidden;
   }
 }
+// benefit eee
 
 // creator-faq
 .creator-faq {
+  padding-bottom: 4.375rem;
   position: relative;
+
+  @include media(web) {
+    position: relative;
+    padding: 0 20px;
+  }
+  @include media(mb) {
+    padding: 0 0px;
+  }
   &__inner {
     position: relative;
   }
@@ -136,3 +191,176 @@
   }
 }
 // creator-faq eee
+
+// partner
+.partner {
+  &__flatform-box {
+    margin-top: 50px;
+
+    &--tit {
+      margin-bottom: 40px;
+      @include flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include media(mb) {
+        margin-bottom: 52px;
+      }
+      .is-category {
+        display: inline-block;
+        width: 114px;
+        height: 40px;
+        @include font-op($c: #fff, $w: 500) {
+          font-size: 18px;
+          line-height: 40px;
+        }
+        background: #01152f;
+        text-align: center;
+
+        @include media(mb) {
+          width: 114px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 18px;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+      .is-line {
+        width: 880px;
+        height: 2px;
+        background: #01152f;
+      }
+    }
+    &--list {
+      display: flex;
+
+      @include media(mb) {
+        flex-wrap: wrap;
+      }
+    }
+    &--item {
+      width: 25%;
+
+      @include media(mb) {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
+      &-img {
+        width: 100%;
+        height: 88px;
+        img {
+          width: 100%;
+          object-fit: cover;
+          vertical-align: bottom;
+        }
+        &-last {
+          margin: 0 auto;
+          width: 100px;
+          height: 146px;
+        }
+      }
+
+      &-txt {
+        margin-top: 22px;
+        text-align: center;
+        @include font-op($w: 600) {
+          font-size: 22px;
+          line-height: 22px;
+        }
+        @include media(mb) {
+          margin-top: 0;
+          font-size: 17px;
+        }
+      }
+    }
+
+    &.first {
+      margin-bottom: 132px;
+
+      @include media(mb) {
+        margin-bottom: 70px;
+      }
+    }
+  }
+  @include media(web) {
+    position: relative;
+    padding: 0 20px;
+  }
+  @include media(mb) {
+    padding: 0 0px;
+    padding-bottom: 60px !important;
+  }
+}
+// partner eee
+
+.check-box {
+  display: inline-block;
+  margin-right: 1.56rem;
+  @include media(mb) {
+    margin-top: 20px;
+  }
+
+  @include media(mb) {
+    margin-bottom: 10px;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &__group {
+    display: inline-block;
+    margin-right: 1.58rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include media(mb) {
+      display: flex !important;
+      justify-content: space-between;
+    }
+  }
+
+  &__input:checked + &__icon {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    @include bg-url("img", "check-on.svg", "center", "cover");
+    @include media(mb) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @at-root .main-brand & {
+      @include bg-url("img", "brand-check-on.svg", "center", "cover");
+    }
+  }
+  &__icon {
+    margin-right: 0.3125rem;
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    @include bg-url("img", "check-off.svg", "center", "cover");
+    @include media(mb) {
+      width: 20px;
+      height: 20px;
+    }
+    vertical-align: text-bottom;
+    @at-root .main-brand & {
+      @include bg-url("img", "brand-check.svg", "center", "cover");
+    }
+  }
+  &__txt {
+    @include font-op($c: #fff, $w: 400) {
+      font-size: 0.9375rem;
+      line-height: 2.25rem;
+    }
+    @include media(mb) {
+      font-size: 15px;
+      margin-left: 5px;
+    }
+  }
+}

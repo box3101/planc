@@ -1,6 +1,6 @@
 @include media(web) {
   html {
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
   .what-do.active {
     transform: scale(1);
@@ -14,5 +14,10 @@
 @include media(mb) {
   html {
     font-size: 10px !important;
+  }
+}
+@include media-custom(321px) {
+  html {
+    font-size: 9px !important;
   }
 }

@@ -152,6 +152,11 @@
       font-size: 1.375rem;
       letter-spacing: -0.0625rem;
     }
+
+    @include media(mb) {
+      font-size: 15px;
+    }
+
     img {
       display: inline-block;
       margin-left: 0.3125rem;
@@ -160,7 +165,7 @@
   &__line {
     @include pos-abs-center-horizontal();
     top: 3.0625rem;
-    width: 18.75rem;
+    width: 22.75rem;
     height: 0.125rem;
     background: #ffffff;
     @include make-before {
@@ -168,6 +173,13 @@
       width: 20%;
       height: 0.125rem;
       background: #01fe87;
+      @include media(mb) {
+        height: 2px;
+      }
+    }
+
+    @include media(mb) {
+      height: 2px;
     }
   }
 }

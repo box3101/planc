@@ -36,11 +36,11 @@
   }
 
   @at-root .main-creator & {
-    padding-top: 6.6875rem;
+    padding-top: 60px;
     text-align: left;
   }
   @at-root .main-brand & {
-    padding-top: 6.6875rem;
+    padding-top: 60px;
     text-align: left;
   }
 }
@@ -61,7 +61,8 @@
 
   @include media(mb) {
     font-size: 15px;
-    font-weight: 400;
-    line-height: 23px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #01152f;
   }
 }
