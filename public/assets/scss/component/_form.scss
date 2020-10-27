@@ -231,6 +231,12 @@
           margin: 0;
           flex-direction: column;
         }
+
+        &.mb0 {
+          .inquiry__form--column {
+            margin-bottom: 0;
+          }
+        }
       }
 
       &-tit {

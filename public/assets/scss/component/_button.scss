@@ -144,13 +144,24 @@
 
 // inquiry버튼
 .inquiry-btn {
-  margin-top: 2.6875rem;
+  margin-top: 4.1875rem;
   position: relative;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  .is-en {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+  }
   &__txt {
+    display: flex;
+    align-items: center;
     @include font-op($c: #fff, $w: 600) {
       font-size: 1.375rem;
       letter-spacing: -0.0625rem;
+      font-family: "noto";
     }
 
     @include media(mb) {

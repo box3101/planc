@@ -2,6 +2,19 @@
 .benefit {
   padding-top: 5.1875rem;
   padding-bottom: 6.4375rem;
+
+  &.active {
+    .benefit__event-box:before {
+      width: 36.5rem;
+    }
+    .benefit__event-box:after {
+      width: 36.5rem;
+    }
+    img {
+      opacity: 1;
+    }
+  }
+
   &__event-box-wrap {
     display: flex;
     justify-content: space-between;
@@ -10,12 +23,15 @@
     margin-bottom: 2.875rem;
     position: relative;
     @include make-before {
+      transition: all 0.7s ease-in-out;
+      transition-delay: 0.2s;
       @include absolute($t: 0, $l: 0);
-      width: 36.5rem;
+      width: 0rem;
       height: 5.625rem;
       background: #5922c8;
       transform: rotate(3deg);
       z-index: zIndex(default);
+
       @at-root .main-brand & {
         background: #2703e8;
       }
@@ -25,6 +41,9 @@
       }
     }
     img {
+      opacity: 0;
+      transition: all 1s;
+      transition-delay: 0.5s;
       transform: rotate(0deg);
       position: relative;
       z-index: 2;
@@ -40,8 +59,9 @@
       }
     }
     @include make-after {
+      transition: all 0.7s ease-in-out;
       @include absolute($t: 0.625rem, $l: 0.625rem);
-      width: 36.5rem;
+      width: 0rem;
       height: 5.625rem;
       background: #01fe87;
       transform: rotate(3deg);
@@ -59,7 +79,7 @@
         margin-top: 70px;
       }
       @include make-before {
-        width: 31.5rem;
+        width: 0rem;
         @include absolute($t: 0rem, $r: 0.625rem);
         transform: rotate(-3deg);
         z-index: zIndex(default);
@@ -94,7 +114,7 @@
         }
       }
       @include make-after {
-        width: 31.5rem;
+        width: 0rem;
         @include absolute($t: 0.625rem, $r: 0rem);
         transform: rotate(-3deg);
       }
@@ -130,6 +150,7 @@
       width: 33.3%;
       @include media(mb) {
         width: 100%;
+        margin-bottom: 18px;
       }
       &-icon {
         width: 9.375rem;
@@ -312,7 +333,7 @@
 
   &__group {
     display: inline-block;
-    margin-right: 1.58rem;
+    margin-right: 1.44rem;
 
     &:last-of-type {
       margin-right: 0;

@@ -32,6 +32,7 @@
     spaceBetween: 20, // 슬라이드간 간격
     loop: true,
     speed: 1000,
+    autoplay: true,
 
     navigation: {
       nextEl: ".com-slide__button--next", // 다음 버튼 클래스명
@@ -76,5 +77,34 @@
 
   window.addEventListener("scroll", function () {
     headerFixed();
+  });
+})();
+
+// TODO: WOW JS
+(function () {
+  wow = new WOW({
+    boxClass: "wow",
+    animateClass: "animated",
+    offset: 200,
+    mobile: false,
+    live: true,
+  });
+  wow.init();
+})();
+
+// TODO : create 효과 모션
+(function () {
+  let scroll = window.pageYOffset;
+  const benefit = document.querySelector(".benefit");
+
+  function showValue() {
+    let posY = benefit.getBoundingClientRect().top;
+    if (posY < window.innerHeight * 0.5) {
+      benefit.classList.add("active");
+    }
+  }
+
+  window.addEventListener("scroll", function () {
+    showValue();
   });
 })();

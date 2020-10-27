@@ -62,7 +62,7 @@
         line-height: 2.75rem;
       }
       @include media(mb) {
-        font-size: 25px;
+        font-size: 21px;
         line-height: 35px;
         font-weight: 400;
       }
@@ -73,7 +73,7 @@
       @at-root .main-creator & {
         @include media(mb) {
           margin-top: 5px;
-          font-size: 18px;
+          font-size: 17px;
           line-height: 25px;
         }
       }
@@ -219,12 +219,23 @@
 .what-do {
   .obj-circle {
     @include absolute($t: 25.083241%, $l: 23.571429%);
+    animation: sample-ani;
   }
   .obj-circle2 {
     @include absolute($t: 12.052117%, $r: 12.307692%);
+    animation: sample-ani;
   }
   .obj-circle3 {
     @include absolute($b: 41.176471%, $l: 12.252747%);
+    animation: sample-ani;
+  }
+  @keyframes sample-ani {
+    0% {
+      transform: translateY(-20%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   position: relative;
   z-index: zIndex(double);
