@@ -68,10 +68,10 @@
 
     if (scroll > 0) {
       hdWrap.classList.add("is-fix");
-      logoImg.setAttribute("src", "/public/assets/images/img/logo-fix.svg");
+      logoImg.setAttribute("src", "../assets/images/img/logo-fix.svg");
     } else {
       hdWrap.classList.remove("is-fix");
-      logoImg.setAttribute("src", "/public/assets/images/img/logo.svg");
+      logoImg.setAttribute("src", "../assets/images/img/logo.svg");
     }
   }
 

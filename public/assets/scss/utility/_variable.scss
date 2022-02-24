@@ -35,11 +35,11 @@ $zIndex-set: (
 );
 
 $path-set: (
-  icon: "/public/assets/images/icon/",
-  btn: "/public/assets/images/btn/",
-  img: "/public/assets/images/img/",
-  logo: "/public/assets/images/logo/",
-  object: "/public/assets/images/object/",
+  icon: "../assets/images/icon/",
+  btn: "../assets/images/btn/",
+  img: "../assets/images/img/",
+  logo: "../assets/images/logo/",
+  object: "../assets/images/object/",
 );
 
 $breakpoints: (

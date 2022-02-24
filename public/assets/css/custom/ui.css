@@ -2864,7 +2864,7 @@ table {
       padding-right: 0.9375rem;
       padding-left: 0.375rem;
       cursor: pointer;
-      background-image: url("/public/assets/images/img/select-arr.svg");
+      background-image: url("../../images/img/select-arr.svg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -3215,7 +3215,7 @@ table {
       left: 0rem;
       width: 3.375rem;
       height: 1.25rem;
-      background-image: url("/public/assets/images/img/bg-button-next.svg");
+      background-image: url("../../images/img/bg-button-next.svg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -3226,7 +3226,7 @@ table {
       left: -4.4375rem;
       width: 3.375rem;
       height: 1.25rem;
-      background-image: url("/public/assets/images/img/bg-button-prev.svg");
+      background-image: url("../../images/img/bg-button-prev.svg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -3284,7 +3284,7 @@ body,
     .header.is-fix .header__inner--language select {
       color: #01152f; }
     .header.is-fix .input-selec-language {
-      background-image: url(/public/assets/images/img/fix-select-arr.svg); }
+      background-image: url(../../images/img/fix-select-arr.svg); }
   .header .logo {
     position: absolute;
     top: 50%;
@@ -3427,7 +3427,7 @@ body,
   position: relative;
   z-index: 2;
   height: 67.5rem;
-  background-image: url("/public/assets/images/img/bg-visual01.png");
+  background-image: url("../../images/img/bg-visual01.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3435,7 +3435,7 @@ body,
   background-size: cover;
   background-repeat: no-repeat; }
   .main-creator .visual {
-    background-image: url("/public/assets/images/img/bg-visual-creator.png");
+    background-image: url("../../images/img/bg-visual-creator.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3444,7 +3444,7 @@ body,
     background-repeat: no-repeat; }
     @media all and (max-width: 600px) {
       .main-creator .visual {
-        background-image: url("/public/assets/images/img/bg-visual-creator-mo.png");
+        background-image: url("../../images/img/bg-visual-creator-mo.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -3452,7 +3452,7 @@ body,
         background-size: cover;
         background-repeat: no-repeat; } }
   .main-brand .visual {
-    background-image: url("/public/assets/images/img/bg-visual-brand.png");
+    background-image: url("../../images/img/bg-visual-brand.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3461,7 +3461,7 @@ body,
     background-repeat: no-repeat; }
     @media all and (max-width: 600px) {
       .main-brand .visual {
-        background-image: url("/public/assets/images/img/bg-visual-brand-mo.png");
+        background-image: url("../../images/img/bg-visual-brand-mo.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -3632,7 +3632,7 @@ body,
   position: relative;
   z-index: 2;
   margin-top: -13.75rem;
-  background-image: url("/public/assets/images/img/bg-what-do.png");
+  background-image: url("../../images/img/bg-what-do.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3759,7 +3759,7 @@ body,
     justify-content: flex-end;
     flex-direction: column; }
   .contact__item:nth-of-type(1) {
-    background-image: url("/public/assets/images/img/bg-contact-item01.png");
+    background-image: url("../../images/img/bg-contact-item01.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3767,7 +3767,7 @@ body,
     background-size: cover;
     background-repeat: no-repeat; }
   .contact__item:nth-of-type(2) {
-    background-image: url("/public/assets/images/img/bg-contact-item02.png");
+    background-image: url("../../images/img/bg-contact-item02.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3828,7 +3828,7 @@ body,
   .main-video .l-center {
     position: relative;
     max-width: 100rem;
-    background-image: url("/public/assets/images/img/mov_main_02.gif");
+    background-image: url("../../images/img/mov_main_02.gif");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4172,7 +4172,7 @@ body,
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    background-image: url("/public/assets/images/img/check-on.svg");
+    background-image: url("../../images/img/check-on.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4184,7 +4184,7 @@ body,
         width: 20px;
         height: 20px; } }
     .main-brand .check-box__input:checked + .check-box__icon {
-      background-image: url("/public/assets/images/img/brand-check-on.svg");
+      background-image: url("../../images/img/brand-check-on.svg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -4196,7 +4196,7 @@ body,
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    background-image: url("/public/assets/images/img/check-off.svg");
+    background-image: url("../../images/img/check-off.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4209,7 +4209,7 @@ body,
         width: 20px;
         height: 20px; } }
     .main-brand .check-box__icon {
-      background-image: url("/public/assets/images/img/brand-check.svg");
+      background-image: url("../../images/img/brand-check.svg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
